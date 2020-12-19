@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
             CourseDate(R.drawable.image3, "gyouza","作者")
 
     )
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -24,6 +25,13 @@ class MainActivity : AppCompatActivity() {
 
         //リサイクラービューアダプターで宣言したaddAllメソッドを呼んであげてデータも渡している
         adapter.addAll(courseDate)
+
+//        button.setOnClickListener{
+//            val txt = edit1.text.toString()
+//
+//            val data = CourseDate(aa, txt, cc)
+//            adapter.add(data)
+//        }
 
 
     }

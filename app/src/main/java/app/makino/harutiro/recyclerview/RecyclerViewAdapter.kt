@@ -36,6 +36,11 @@ class RecyclerViewAdapter(private val context: Context):
 
     }
 
+    fun add(item: CourseDate){
+        this.items.add(item)
+        notifyDataSetChanged()
+    }
+
     //引数にとったリストをadapterに追加するメソッド
     fun addAll(items: List<CourseDate>){
         this.items.addAll(items)
