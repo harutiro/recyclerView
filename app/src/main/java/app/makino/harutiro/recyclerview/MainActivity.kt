@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val adapter = RecyclerViewAdapter(this)
+//      recyclerViewのIDを呼んであげないといけない  
         recycleView.layoutManager = LinearLayoutManager(this)
         recycleView.adapter = adapter
 
